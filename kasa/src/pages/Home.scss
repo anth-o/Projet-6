@@ -1,0 +1,10 @@
+.listeLogement {
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;    
+    gap: 50px 60px;
+}

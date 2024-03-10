@@ -1,0 +1,27 @@
+.card {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: #FF6060;
+    position: relative;
+    gap: 150px;
+    &__img {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        left: 0;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        text-align: left;
+        max-width: 300px;
+    }
+}
