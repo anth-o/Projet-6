@@ -1,0 +1,25 @@
+$main-color: #FF6060;
+
+.erreur__title {
+    color: $main-color;
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0;
+    padding: 139px 0;
+}
+
+.erreur__text {
+    color: $main-color;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.erreur__link {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 139px 0;
+    margin: 0;
+}

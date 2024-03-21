@@ -1,0 +1,48 @@
+.collapse {
+    width: 1023px;
+    margin: auto;
+    padding-top: 38px;
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background: #FF6060;
+        border-radius: 10px;
+        padding: 10px 20px 10px 15px;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0;
+ 
+    }
+    &__title img{
+        width: 24px;
+    }
+    &__content {
+        text-align: left;
+        padding: 20px 25px;
+        font-size: 18px;
+        font-weight: 400;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+}
+
+.collapse__content.open {
+    max-height: 100px; /* Valeur de hauteur maximale à ajuster selon votre contenu */
+    transition: max-height 0.5s ease-in-out;
+}
+.chevron {
+    transition: all 0.3s ease-in-out;
+}
+
+.chevron-up {
+    transform: rotate(180deg);
+}
+
+.chevron-down {
+    transform: rotate(0deg);
+}
