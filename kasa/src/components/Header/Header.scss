@@ -24,3 +24,21 @@
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-top: 0;
+        margin: 0 20px;
+        align-items: center;
+        &__logo img {
+            max-width: 145px;
+            margin-top: 20px;
+        }
+        &__navbar ul {
+            .header__navbar__link a {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Header from "../components/Principale/Header"
-import Footer from "../components/Principale/Footer"
-import Banner from "../components/Principale/Banner"
-import Card from "../components/Principale/Card"
-import banniere from "../img/banner-home.png"
-import jsonData from "../datas/logements.json"
+import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
+import Banner from "../../components/Banner/Banner"
+import Card from "../../components/Card/Card"
+import banniere from "../../img/banner-home.png"
+import jsonData from "../../datas/logements.json"
 import "./Home.scss"
 
 export default function Home() {
@@ -30,6 +30,7 @@ export default function Home() {
             {logements.map(logement => (
                 <Card
                     key={logement.id}
+                    id={logement.id}
                     cover={logement.cover}
                     title={logement.title}                
             />

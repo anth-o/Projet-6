@@ -6,22 +6,23 @@ import chevrondown from "../../img/chevron-down.png";
 
 function Collapse(props) {
 
-    const [isOpen, setIsOpen] = useState(props.open !== undefined ? props.open: false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen);
     };
-    console.log(isOpen)
     return (
-        <div className="collapse">
-            <h3 onClick={handleClick} className="collapse__title">
+        <div onClick={handleClick} className={`collapse ${isOpen ? "open" : ""}`}>
+            <h3 className="collapse__title" onClick={handleClick}>
                 {props.title}
                 <img className={isOpen ? "chevron chevron-down": "chevron chevron-up" }
                     src={chevrondown} 
                     alt="afficher le contenu" 
                 />
             </h3>
-            {isOpen && <div className={`collapse__content ${isOpen ? 'open': 'closed'}`}>{props.content}</div>}
+            <div className="collapse__content">
+                <div className="collapse__wrapper">{isOpen &&props.content}</div>
+            </div>
         </div>
     ) 
 }

@@ -1,15 +1,13 @@
 import './App.scss';
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import FicheLogement from "./pages/FicheLogement";
+import Home from "./pages/Home/Home";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import APropos from "./pages/Apropos";
-import Erreur from "./pages/Erreur";
+import Erreur from "./pages/Erreur/Erreur";
 
 function App() {
   return (
-    <div className='App'>
       <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
@@ -17,7 +15,6 @@ function App() {
           <Route path="/a-propos" element={<APropos />}></Route>
           <Route path="*" element={<Erreur />}></Route>
       </Routes>
-    </div>
   );
 }
 

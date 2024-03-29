@@ -1,0 +1,82 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 415px;
+    max-width: 1240px;
+    border-radius: 25px;
+    margin: 50px auto auto auto;
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    &__img-show {
+        opacity: 1;
+        object-fit: cover;
+    }
+}
+
+.chevron-compteur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	position: absolute;
+	width: 100%;
+    padding-top: 150px;
+    padding-bottom: 186px;
+}
+
+.chevron-prev, .chevron-next {
+    cursor: pointer;
+    width: 47px;
+    height: 79px;
+}
+
+.chevron-next {
+    padding-right: 23px;
+}
+
+.chevron-prev {
+    padding-left: 23px;
+}
+
+.compteur {
+    position: absolute;
+    color: #FFFFFF;
+    padding-top: 210px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 255px;
+        margin: 27px 20px 0 20px;
+        border-radius: 10px;
+    }
+
+    .chevron-compteur {
+        padding-top: 118px;
+    }
+
+    .chevron-next, .chevron-prev {
+        width: 12px;
+        height: 20px;
+    }
+
+    .chevron-next {
+        padding-right: 6px;
+    }
+    
+    .chevron-prev {
+        padding-left: 6px;
+    }
+    
+    .compteur {
+        display: none;
+    }
+}

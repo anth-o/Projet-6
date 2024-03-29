@@ -1,0 +1,109 @@
+$main-color: #FF6060;
+
+.infoLogement {
+   max-width: 1240px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: auto;
+   &__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: $main-color;
+    margin: 30px 0 5px 0;
+   }
+   &__location {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+   }
+   &__tag {
+    display: flex;
+    padding-top: 20px;
+    p {
+        background-color: $main-color;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        height: 25px;
+        padding: 0 22px;
+        margin-right: 10px;
+        }
+    }
+   &__host {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 0 27px 0;
+    p {
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: right;
+    }
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
+        margin-left: 10px;
+    }
+   }
+   &__rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    img {
+        padding-left: 15px;
+        width: 24px;
+        height: 24px;
+    }
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .infoLogement {
+        flex-direction: column;
+        &__title{ 
+            font-size: 18px;
+            margin: 15px 20px;
+            text-align: left;
+        }
+        &__location {
+            margin: 0 20px;
+        }
+        &__tag {
+            margin: 0 20px;
+            padding-top: 0;
+        }
+        &__host {
+            margin: 0 20px;
+            padding: 0;
+            p {
+                font-size: 12px;
+            }
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        &__hostRating {
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 20px;
+        }
+        &__rating img {
+            width: 13px;
+            height: 13px;
+            padding-left: 7px;
+        }
+    }
+    
+}

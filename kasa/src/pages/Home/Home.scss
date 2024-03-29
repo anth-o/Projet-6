@@ -8,3 +8,9 @@
     padding: 100px;    
     gap: 50px 60px;
 }
+
+@media screen and (max-width: 768px) {
+    .listeLogement {
+        padding: 0;
+    }
+}
